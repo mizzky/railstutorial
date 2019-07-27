@@ -1,24 +1,31 @@
-# README
+# Ruby on Rails Tutorial sample application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## License
 
-Things you may want to cover:
+[Ruby on Rails Tutorial](https://railstutorial.jp/)内にあるソースコードはMITライセンスとBeerwareライセンスの素で公開されています。
+詳細は[LICENSE.md](LICENSE.md)をご覧ください。
 
-* Ruby version
 
-* System dependencies
+## Usage
 
-* Configuration
+```
+$ bundle install --without production
+```
 
-* Database creation
+migrate db
 
-* Database initialization
+```
+$ rails db:migrate
+```
 
-* How to run the test suite
+finally confirm test result
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ rails test
+```
 
-* Deployment instructions
+Completed if u passed test
 
-* ...
+```
+$ rails server
+```
